@@ -44,7 +44,3 @@ docker compose up -d
 ### Access the Dagster UI
 
 Open your browser and navigate to `http://localhost:3000` to access the Dagster UI. You should see the Dagster dashboard with the tutorial repository loaded.
-
-### Disclaimer
-
-I wrote this readME using chatGPT. If anything is wrong or not clear please let me know.
