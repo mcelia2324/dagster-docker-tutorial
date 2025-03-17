@@ -11,10 +11,6 @@ storage:
         env: DAGSTER_PG_DB
       port: 5432
 
-run_launcher:
-  module: dagster_docker
-  class: DockerRunLauncher
-
 run_coordinator:
   module: dagster.core.run_coordinator
-  class: DefaultRunCoordinator
+  class: QueuedRunCoordinator

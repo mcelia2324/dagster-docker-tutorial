@@ -4,4 +4,4 @@
 dagster-daemon run &
 
 # Start the Dagit UI in the foreground
-dagit -h 0.0.0.0 -p 3000
+dagster-webserver -h 0.0.0.0 -p 3001

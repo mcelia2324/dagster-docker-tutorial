@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.12.4
 
 RUN mkdir -p /opt/dagster/dagster_home /opt/dagster/app
 
@@ -15,7 +15,7 @@ COPY dagster.yaml /opt/dagster/dagster_home/
 
 WORKDIR /opt/dagster/app
 
-EXPOSE 3000
+EXPOSE 3001
 
 # Use a script to start both dagster-webserver and dagster-daemon
 COPY start.sh /opt/dagster/app/
